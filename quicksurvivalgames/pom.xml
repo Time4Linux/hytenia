@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.pxscxl.qsg</groupId>
+    <artifactId>QSG</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+    <!-- plugin.yml -->
+    <description>QSG-Master</description>
+    <!-- *plugin.yml -->
+    <properties>
+        <!-- plugin.yml -->
+        <author>pxscxl</author>
+        <mainClass>de.pxscxl.spigot.qsg.QSG</mainClass>
+        <compile.name>QSG</compile.name>
+        <!-- *plugin.yml -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://mvnrepository.com/artifact/com.github.azbh111/spigot-1.8.8</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+
+        <!--Spigot-API -->
+        <dependency>
+            <groupId>com.github.azbh111</groupId>
+            <artifactId>spigot-1.8.8</artifactId>
+            <version>R</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--Origin-API -->
+        <dependency>
+            <groupId>de.pxscxl.origin</groupId>
+            <artifactId>Origin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--- CloudAPI-Spigot -->
+        <dependency>
+            <groupId>de.pxscxl.cloud</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>QSG</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

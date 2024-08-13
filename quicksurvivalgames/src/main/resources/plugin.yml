@@ -1,0 +1,10 @@
+name: ${compile.name}
+version: ${version}
+description: ${description}
+author: ${author}
+
+depend:
+   - "Origin"
+   - "CloudSpigot"
+
+main: ${mainClass}

@@ -1,0 +1,10 @@
+name: QSG
+version: 1.0-SNAPSHOT
+description: QSG-Master
+author: pxscxl
+
+depend:
+   - "Origin"
+   - "CloudSpigot"
+
+main: de.pxscxl.spigot.qsg.QSG

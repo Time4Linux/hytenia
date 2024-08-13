@@ -1,0 +1,9 @@
+name: ${compile.name}
+version: ${version}
+description: ${description}
+author: ${author}
+
+depend:
+   - "CloudNetAPI"
+
+main: ${mainClass}

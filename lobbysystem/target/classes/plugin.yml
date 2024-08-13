@@ -1,0 +1,6 @@
+name: LobbySystem
+version: 1.0-SNAPSHOT
+description: LobbySystem-Master
+author: pxscxl
+
+main: de.pxscxl.spigot.lobby.LobbySystem

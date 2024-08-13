@@ -1,0 +1,9 @@
+name: ProxySystem
+version: 1.0-SNAPSHOT
+description: ProxySystem-Master
+author: pxscxl
+
+depend:
+   - "CloudNetAPI"
+
+main: de.pxscxl.bungee.proxysystem.ProxySystem

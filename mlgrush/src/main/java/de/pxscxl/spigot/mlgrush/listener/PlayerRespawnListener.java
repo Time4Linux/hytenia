@@ -1,0 +1,16 @@
+package de.pxscxl.spigot.mlgrush.listener;
+
+import de.pxscxl.origin.spigot.api.OriginPlayer;
+import de.pxscxl.origin.spigot.api.manager.OriginManager;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerRespawnEvent;
+
+public class PlayerRespawnListener implements Listener {
+
+    @EventHandler
+    public void onPlayerRespawn(PlayerRespawnEvent event) {
+        OriginPlayer player = OriginManager.getInstance().getPlayer(event.getPlayer());
+        event.setRespawnLocation(player.getLocation());
+    }
+}

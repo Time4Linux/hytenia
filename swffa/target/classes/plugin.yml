@@ -1,0 +1,10 @@
+name: SkyWarsFFA
+version: 1.0-SNAPSHOT
+description: SkyWarsFFA-Master
+author: pxscxl
+
+depend:
+   - "Origin"
+   - "CloudSpigot"
+
+main: de.pxscxl.spigot.swffa.SkyWarsFFA

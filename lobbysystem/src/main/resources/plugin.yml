@@ -1,0 +1,6 @@
+name: ${compile.name}
+version: ${version}
+description: ${description}
+author: ${author}
+
+main: ${mainClass}

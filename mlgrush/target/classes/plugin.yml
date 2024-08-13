@@ -1,0 +1,9 @@
+name: MLGRush
+version: 1.0-SNAPSHOT
+description: MLGRush-Master
+author: pxscxl
+
+depend:
+   - "CloudSpigot"
+
+main: de.pxscxl.spigot.mlgrush.MLGRush
